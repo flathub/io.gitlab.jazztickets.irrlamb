@@ -21,3 +21,5 @@ modules:
       - type: archive
         url: https://gitlab.com/jazztickets/uploads/-/raw/main/irrlamb-1.0.5r664-src.tar.gz
         sha256: c5528e556ebf5049d54528ad8a79b307f1d74712a4b16ffff780b9fc1b1b2ddc
+      - type: patch
+        path: appdata.patch
