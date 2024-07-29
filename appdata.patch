@@ -1,12 +1,16 @@
 --- a/deployment/irrlamb.xml
 +++ b/deployment/irrlamb.xml
-@@ -2,7 +2,8 @@
+@@ -1,8 +1,12 @@
+ <?xml version="1.0" encoding="UTF-8"?>
  <component type="desktop-application">
  	<id>io.gitlab.jazztickets.irrlamb</id>
++	<launchable type="desktop-id">io.gitlab.jazztickets.irrlamb.desktop</launchable>
  	<name>irrlamb</name>
 -	<summary>3D physics game in which you control a blue ball of energy in an attempt to touch all glowing orbs</summary>
 +	<summary>3D physics platformer</summary>
-+	<developer_name>jazztickets</developer_name>
++	<developer id="com.gitlab">
++		<name>jazztickets</name>
++	</developer>
  	<description>
  		<p>Find all the orbs in this challenging 3D physics game, using either mouse/keyboard or gamepad.</p>
  		<p>35 levels, including 15 tutorials, 7 "campaign" levels, 4 skateparks, 7 challenges, and 2 secrets.</p>
