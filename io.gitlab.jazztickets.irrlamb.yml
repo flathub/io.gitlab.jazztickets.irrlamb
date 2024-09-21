@@ -1,6 +1,6 @@
 app-id: io.gitlab.jazztickets.irrlamb
 runtime: org.freedesktop.Platform
-runtime-version: '21.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: irrlamb
 rename-desktop-file: irrlamb.desktop
@@ -19,7 +19,5 @@ modules:
     builddir: true
     sources:
       - type: archive
-        url: https://gitlab.com/jazztickets/uploads/-/raw/main/irrlamb-1.0.5r664-src.tar.gz
-        sha256: c5528e556ebf5049d54528ad8a79b307f1d74712a4b16ffff780b9fc1b1b2ddc
-      - type: patch
-        path: appdata.patch
+        url: https://gitlab.com/jazztickets/uploads/-/raw/main/irrlamb-1.0.6r669-src.tar.gz
+        sha256: c350730178596d99e078dd6f9425fbeb0b08b2d8e5192a2dea9ae3ea5c051c08
