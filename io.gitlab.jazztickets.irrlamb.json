@@ -1,17 +1,25 @@
 {
 	"app-id": "io.gitlab.jazztickets.irrlamb",
 	"runtime": "org.freedesktop.Platform",
-	"runtime-version": "24.08",
+	"runtime-version": "25.08",
 	"sdk": "org.freedesktop.Sdk",
 	"command": "irrlamb",
 	"rename-desktop-file": "irrlamb.desktop",
 	"rename-icon": "irrlamb",
 	"rename-appdata-file": "irrlamb.xml",
+	"finish-args": [
+		"--device=all",
+		"--share=ipc",
+		"--socket=pulseaudio",
+		"--socket=x11"
+	],
 	"modules": [
 		{
 			"name": "irrlamb",
 			"buildsystem": "cmake-ninja",
-			"builddir": true,
+			"cleanup": [
+				"/share/doc"
+			],
 			"sources": [
 				{
 					"type": "archive",
@@ -20,11 +28,5 @@
 				}
 			]
 		}
-	],
-	"finish-args": [
-		"--device=all",
-		"--share=ipc",
-		"--socket=pulseaudio",
-		"--socket=x11"
 	]
 }
